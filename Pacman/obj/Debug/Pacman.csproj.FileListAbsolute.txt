@@ -5,3 +5,10 @@ D:\GitHub\Desarrollo 2\Pacman\Pacman\Pacman\obj\Debug\Pacman.csproj.AssemblyRefe
 D:\GitHub\Desarrollo 2\Pacman\Pacman\Pacman\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
 D:\GitHub\Desarrollo 2\Pacman\Pacman\Pacman\obj\Debug\Pacman.exe
 D:\GitHub\Desarrollo 2\Pacman\Pacman\Pacman\obj\Debug\Pacman.pdb
+C:\Users\Administrador\Documents\GitHub\Pacman\Pacman\bin\Debug\Pacman.exe.config
+C:\Users\Administrador\Documents\GitHub\Pacman\Pacman\bin\Debug\Pacman.exe
+C:\Users\Administrador\Documents\GitHub\Pacman\Pacman\bin\Debug\Pacman.pdb
+C:\Users\Administrador\Documents\GitHub\Pacman\Pacman\obj\Debug\Pacman.csprojAssemblyReference.cache
+C:\Users\Administrador\Documents\GitHub\Pacman\Pacman\obj\Debug\Pacman.csproj.CoreCompileInputs.cache
+C:\Users\Administrador\Documents\GitHub\Pacman\Pacman\obj\Debug\Pacman.exe
+C:\Users\Administrador\Documents\GitHub\Pacman\Pacman\obj\Debug\Pacman.pdb

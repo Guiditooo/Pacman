@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Generic
+﻿namespace Generic
 {
     namespace IntTwo
     {
@@ -12,6 +6,7 @@ namespace Generic
         {
             private int x;
             private int y;
+
             public int X 
             {
                 get
@@ -36,13 +31,13 @@ namespace Generic
             }
             public Int2()
             {
-                X = 0;
-                Y = 0;
+                x = 0;
+                y = 0;
             }
             public Int2(int x, int y)
             {
-                X = x;
-                Y = y;
+                this.x = x;
+                this.y = y;
             }
         }
     }

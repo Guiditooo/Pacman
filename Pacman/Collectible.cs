@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Generic.IntTwo;
 
 namespace Pacman
@@ -11,29 +7,52 @@ namespace Pacman
     {
         enum CollectibleType
         {
+            Default = 0,
             Point,
             Fruit,
-            Power,
-            Default=0
+            Power
         }
     }
     class Collectible
     {
-        private char _shape;
-        private int _pointsToGive;
-        private Int2 _pos;
-        private Collect.CollectibleType _collectibleType = Collect.CollectibleType.Default;
+        private char shape;
+        private int pointsToGive;
+        private Int2 pos;
+        private Collect.CollectibleType collectibleType;
 
-        public Collectible(char shape, int pointsToGive, Collect.CollectibleType collectibleType, Int2 pos)
+        public Collect.CollectibleType CollectibleType { get; set; }
+
+        public Collectible(int pointsToGive, Collect.CollectibleType collectibleType, Int2 pos)
         {
-            _shape = shape;
-            _pointsToGive = pointsToGive;
-            _collectibleType = collectibleType;
-            _pos = pos;
+            this.pointsToGive = pointsToGive;
+            this.collectibleType = collectibleType;
+            this.pos = pos;
+            SetShape();
         }
-        public Collect.CollectibleType GetCollectibleType() => _collectibleType;
 
+        public void Draw()
+        {
+            Console.SetCursorPosition(pos.X, pos.Y);
+        }
 
-        
+        private void SetShape()
+        {
+            switch (collectibleType)
+            {
+                case Collect.CollectibleType.Point:
+                    shape = 'o';
+                    break;
+                case Collect.CollectibleType.Fruit:
+                    shape = 'Ó';
+                    break;
+                case Collect.CollectibleType.Power:
+                    shape = '§';
+                    break;
+                case Collect.CollectibleType.Default:
+                default:
+                    shape = '½';
+                    break;
+            }
+        }
     }
 }
